@@ -1,0 +1,77 @@
+
+//void Write_File(Stu *head, int n) {
+//    Stu *p;
+//    p = head;
+//    FILE *fp;
+//    int i;
+//    printf("\n");
+//    printf("\n******************************************************************************\n");
+//    if ((fp = fopen("student.txt", "w")) == NULL) {
+//        printf("\n打开open student.txt失败\n");
+//        return;
+//    }
+//    fprintf(fp, "%d\n", n);
+//    for (i = 0; i < n; i++) {
+//        fprintf(fp, "%13ld%12s%2d%3d%5d%13ld\n", p->num, p->name, p->sex, p->age, p->dorm, p->phone);
+//        p = p->next;
+//    }
+//    printf("\n保存成功\n");
+//    fclose(fp);
+//    printf("\n******************************************************************************\n");
+//}
+
+//Stu *Read_File(Stu *head, int *n) {
+//    Stu *p;
+//    FILE *fp;
+//    int i;
+//    if ((fp = fopen("student.txt", "r")) == NULL) {
+//        printf("\t打开student.txt失败\n");
+//        return NULL;
+//    }
+//    fscanf(fp, "%d\n", n);
+//    head = creat1(*n);  //创建了一个空链表，并且赋给head
+//    p = head;
+//    for (i = 0; i < *n; i++) {
+//        fscanf(fp, "%13ld", &p->num);
+//        fscanf(fp, "%12s", &p->name);
+//        fscanf(fp, "%2d", &p->sex);
+//        fscanf(fp, "%3d", &p->age);
+//        fscanf(fp, "%5d", &p->dorm);
+//        fscanf(fp, "%13ld\n", &p->phone);
+//        p = p->next;
+//
+//    }
+//    printf("\t读取成功\n");
+//    fclose(fp);
+//    print(head);
+//    return head;
+//}
+
+//Stu *creat(int n,Stu *head) {
+//    Stu *p1, *p2;
+//    int i;
+//    // system("cls");
+//    for (i = 1; i < n + 1; i++) {
+//        p1 = (Stu *) malloc(SIZE);
+//        printf("请输入学生学号:");
+//        scanf("%ld", &p1->num);
+//        printf("请输入学生姓名:");
+//        scanf("%s", p1->name);
+//        printf("请输入学生性别(1为男,0为女):");
+//        scanf("%d", &p1->sex);
+//        printf("请输入学生年龄:");
+//        scanf("%d", &p1->age);
+//        printf("请输入学生宿舍号码:");
+//        scanf("%d", &p1->dorm);
+//        printf("请输入学生电话号码:");
+//        scanf("%ld", &p1->phone);
+//        p1->next = NULL;
+//        if (i == 1) {
+//            head = p2 = p1;
+//        } else {
+//            p2->next = p1;
+//            p2 = p1;
+//        }
+//    }
+//    return (head);
+//}

@@ -1,0 +1,3 @@
+C:/Users/15bri5/Documents/SecondDegreeC-master/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/15bri5/Documents/SecondDegreeC-master/cmake-build-debug/CMakeFiles/jiaowuguanli.dir
+C:/Users/15bri5/Documents/SecondDegreeC-master/cmake-build-debug/CMakeFiles/rebuild_cache.dir
