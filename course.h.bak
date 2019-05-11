@@ -53,7 +53,7 @@ Cou *cou_creat(Cou *head) {
             scanf("%d", &p1->usual_grade);
             printf("请输入学生综合成绩:");
             scanf("%d", &p1->final_grade);
-            printf("重修情况，若否填0,若是填写重修次数:");
+            printf("是否重修，若否填0,若是填写重修次数:");
             scanf("%d", &p1->retake);
             p1->num = course_num;
             strcpy(p1->name, course_name);
@@ -90,7 +90,7 @@ Cou *cou_creat(Cou *head) {
             scanf("%d", &p1->usual_grade);
             printf("请输入学生综合成绩:");
             scanf("%d", &p1->final_grade);
-            printf("重修情况，若否填0,若是填写重修次数:");
+            printf("是否重修，若否填0,若是填写重修次数:");
             scanf("%d", &p1->retake);
             p1->num = course_num;
             strcpy(p1->name, course_name);
@@ -240,7 +240,7 @@ void cou_print(Cou *head) {
     if (head != NULL) {
         printf("\n******************************************************************************\n");
         printf("%13s %12s %13s %3s %5s %5s %5s %3s %5s\n\n", "课程编码", "课程名称", "学生学号", "班级", "考试成绩", "平时成绩", "综合成绩", "学分",
-               "重修情况");
+               "是否重修");
         do {
 
             printf("%13ld %12s %13lld %3d %5d %5d %5d %5d %5d\n", p->num, p->name, p->stu_num, p->class_num,
@@ -258,7 +258,7 @@ void class_print(Cou *head, int class_num) {
     if (head != NULL) {
         printf("\n******************************************************************************\n");
         printf("%12s %13s %3s %5s %5s %5s %3s %5s\n\n", "课程名称", "学生学号", "班级", "考试成绩", "平时成绩", "综合成绩", "学分",
-               "重修情况");
+               "是否重修");
         do {
             if (p->class_num == class_num) {
                 printf("%13s %12s %13lld %3d %5d %5d %5d %5d %5d\n", get_name(p->stu_num), p->name, p->stu_num,
@@ -285,7 +285,7 @@ void course_print(Cou *head, long num) {
     if (head != NULL) {
         printf("\n******************************************************************************\n");
         printf("%13s %12s %13s %3s %5s %5s %5s %3s %5s\n\n", "学生姓名", "课程名称", "学生学号", "班级", "考试成绩", "平时成绩", "综合成绩", "学分",
-               "重修情况");
+               "是否重修");
         do {
             if (p->num == num) {
                 printf("%13s %12s %13lld %3d %5d %5d %5d %5d %5d\n", get_name(p->stu_num), p->name, p->stu_num,
